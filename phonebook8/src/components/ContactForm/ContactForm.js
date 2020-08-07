@@ -49,7 +49,7 @@ class ContactForm extends Component {
       <>
         <ToastContainer />
         <h2>PhoneBook</h2>
-        <form onSubmit={this.handleSubmit}>
+        <form className={styles.formContacts} onSubmit={this.handleSubmit}>
           <label className={styles.label}>
             Name
             <input

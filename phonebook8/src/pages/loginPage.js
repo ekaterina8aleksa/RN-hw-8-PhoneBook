@@ -20,6 +20,7 @@ class LoginPage extends Component {
     this.props.onLogin(this.state);
 
     this.setState({ email: "", password: "" });
+    console.log("LoginPage Submit");
   };
 
   render() {
@@ -29,7 +30,11 @@ class LoginPage extends Component {
       <div className={classNames(styles.container, styles.authorization)}>
         <h1>(✯ᴗ✯)</h1>
 
-        <form className={styles.formDecor} autoComplete="off">
+        <form
+          className={styles.formDecor}
+          autoComplete="off"
+          onSubmit={this.handleSubmit}
+        >
           <div className={styles.leftDecoration}></div>
           <div className={styles.rightDecoration}></div>
           <div className={styles.circle}></div>
@@ -37,6 +42,7 @@ class LoginPage extends Component {
             <h3>Authorization</h3>
 
             <input
+              className={styles.input}
               type="email"
               name="email"
               value={email}
@@ -44,13 +50,16 @@ class LoginPage extends Component {
               placeholder="Email"
             ></input>
             <input
+              className={styles.input}
               type="password"
               name="password"
               value={password}
               onChange={this.handleChange}
               placeholder="Password"
             ></input>
-            <button type="submit">Login</button>
+            <button type="submit" className={styles.button}>
+              Login
+            </button>
           </div>
         </form>
       </div>

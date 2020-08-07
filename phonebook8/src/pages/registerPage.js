@@ -21,6 +21,7 @@ class RegisterPage extends Component {
     this.props.onRegister(this.state);
 
     this.setState({ name: "", email: "", password: "" });
+    console.log("RegisterPage Submit");
   };
 
   render() {
@@ -30,13 +31,18 @@ class RegisterPage extends Component {
       <div className={classNames(styles.container, styles.registration)}>
         <h1>✧◝(⁰▿⁰)◜✧</h1>
 
-        <form className={styles.formDecor} autoComplete="off">
+        <form
+          className={styles.formDecor}
+          autoComplete="off"
+          onSubmit={this.handleSubmit}
+        >
           <div className={styles.leftDecoration}></div>
           <div className={styles.rightDecoration}></div>
           <div className={styles.circle}></div>
           <div className={styles.formInner}>
             <h3>Registration</h3>
             <input
+              className={styles.input}
               type="text"
               name="name"
               value={name}
@@ -44,6 +50,7 @@ class RegisterPage extends Component {
               placeholder="Username"
             ></input>
             <input
+              className={styles.input}
               type="email"
               name="email"
               value={email}
@@ -51,13 +58,16 @@ class RegisterPage extends Component {
               placeholder="Email"
             ></input>
             <input
+              className={styles.input}
               type="password"
               name="password"
               value={password}
               onChange={this.handleChange}
               placeholder="Password"
             ></input>
-            <button type="submit">Register</button>
+            <button type="submit" className={styles.button}>
+              Register
+            </button>
           </div>
         </form>
       </div>

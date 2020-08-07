@@ -5,7 +5,7 @@ import defaultAvatar from "../helpers";
 import styles from "../Phonebook.module.css";
 
 const UserMenu = ({ avatar, name, onLogout }) => (
-  <div className={styles.container}>
+  <div className={styles.userMenu}>
     <img src={avatar} alt="" width="32" className={styles.userAvatar} />
     <span className={styles.userName}>Welcome, {name}</span>
     <button type="button" onClick={onLogout} className={styles.button}>

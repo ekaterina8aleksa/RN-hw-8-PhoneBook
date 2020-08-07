@@ -6,6 +6,8 @@ import { connect } from "react-redux";
 import Spinner from "../common/Spinner/Loader";
 import { contactsSelectors, contactsOperations } from "../redux/contacts";
 import "react-toastify/dist/ReactToastify.css";
+import classNames from "classnames";
+import styles from "../Phonebook.module.css";
 
 class contactsPage extends Component {
   componentDidMount() {
@@ -16,7 +18,7 @@ class contactsPage extends Component {
   };
   render() {
     return (
-      <>
+      <div className={classNames(styles.container, styles.contacts)}>
         <ContactForm onSubmit={this.formListener} />
 
         <Filter />
@@ -26,7 +28,7 @@ class contactsPage extends Component {
         <ContactList />
 
         {this.props.isLoading && <Spinner />}
-      </>
+      </div>
     );
   }
 }
