@@ -79,6 +79,9 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 5px 0px rgb(0, 0, 0);
 }
+li > button {
+  margin-left: 10px;
+}
 h2,
 h3,
 .title {
@@ -97,28 +100,6 @@ h3,
   justify-content: center;
   margin: 10px auto;
 }
-/* .button {
-    text-decoration: none;
-    display: flex;
-    border: none;
-    border-radius: 5%;
-    margin: 15px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(58, 101, 241);
-    font-family: "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    box-shadow: 0px 5px 5px black;
-    text-align: center;
-    padding: 3px;
-    outline: none;
-}
-
-.button:hover {
-    box-shadow: none;
-    background-color: rgb(45, 224, 141);
-    cursor: pointer;
-} */
 .formContacts {
   display: block;
   width: 400px;
@@ -131,10 +112,6 @@ h3,
   margin: 10px;
   display: block;
 }
-/* .input {
-    margin-top: 10px;
-} */
-
 .finder {
   width: 350px;
   display: flex;
@@ -152,20 +129,16 @@ h3,
   padding: 10px;
   justify-content: center;
 }
-/* .input::placeholder {
-    color: rgb(175, 172, 172);
-    opacity: 1;
-} */
 .hidden {
   display: none;
 }
-
 .formDecor {
   position: relative;
   max-width: 400px;
   margin: 50px auto 0;
   background: rgb(255, 255, 255);
   border-radius: 30px;
+  margin-bottom: 20px;
 }
 .leftDecoration,
 .rightDecoration {
@@ -233,7 +206,6 @@ h3,
   border-radius: 20px;
   font-family: "Arial", sans-serif;
   outline: none;
-  /* margin-right: 5px; */
 }
 .input:hover {
   cursor: pointer;
@@ -243,7 +215,6 @@ h3,
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0 0 40px 40px rgb(246, 154, 115) inset, 0 0 0 0 rgb(246, 154, 115);
-  /* border-bottom: 4px solid rgb(216, 125, 86); */
   color: rgb(255, 255, 255);
   font-size: 14px;
   outline: none;
@@ -251,13 +222,11 @@ h3,
   transition: 0.15s ease-in-out;
   margin-bottom: 10px;
 }
-
 .button:hover {
   box-shadow: 0 0 10px 0 rgb(246, 154, 115) inset,
     0 0 10px 4px rgb(246, 154, 115);
   color: rgb(246, 154, 115);
 }
-
 .formInner h3 {
   margin-top: 0;
   font-family: "Arial", sans-serif;
