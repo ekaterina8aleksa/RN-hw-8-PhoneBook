@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { contactsOperations } from "../../redux/contacts";
 import { ToastContainer, toast } from "react-toastify";
-import styles from "../../Phonebook.module.css";
+import styles from "../../theme/Phonebook.module.css";
 
 class ContactForm extends Component {
   state = {

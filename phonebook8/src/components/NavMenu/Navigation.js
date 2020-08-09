@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import { authSelectors } from "../redux/auth";
-import styles from "../Phonebook.module.css";
-import routes from "../routes";
+import { authSelectors } from "../../redux/auth";
+import styles from "../../theme/Phonebook.module.css";
+import routes from "../../units/routes";
 
 const Navigation = ({ isAuthenticated }) => (
   <nav>

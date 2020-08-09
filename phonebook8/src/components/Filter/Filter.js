@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { contactsSelectors, contactsActions } from "../../redux/contacts";
-import styles from "../../Phonebook.module.css";
+import styles from "../../theme/Phonebook.module.css";
 
 const Filter = ({ value, onChange, contacts }) =>
   contacts.length >= 2 && (

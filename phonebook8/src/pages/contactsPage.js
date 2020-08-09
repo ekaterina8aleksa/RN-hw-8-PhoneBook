@@ -7,19 +7,19 @@ import Spinner from "../common/Spinner/Loader";
 import { contactsSelectors, contactsOperations } from "../redux/contacts";
 import "react-toastify/dist/ReactToastify.css";
 import classNames from "classnames";
-import styles from "../Phonebook.module.css";
+import styles from "../theme/Phonebook.module.css";
 
 class contactsPage extends Component {
   componentDidMount() {
     this.props.fetchContacts();
   }
-  formListener = ({ name, number }) => {
+  onSaveContact = ({ name, number }) => {
     this.addContact(name, number);
   };
   render() {
     return (
       <div className={classNames(styles.container, styles.contacts)}>
-        <ContactForm onSubmit={this.formListener} />
+        <ContactForm onSubmit={this.onSaveContact} />
 
         <Filter />
 

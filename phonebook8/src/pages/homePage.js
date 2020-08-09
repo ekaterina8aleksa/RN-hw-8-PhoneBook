@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Phonebook.module.css";
+import styles from "../theme/Phonebook.module.css";
 import classNames from "classnames";
 
 const HomePage = () => (

@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { authSelectors, authOperations } from "../redux/auth";
-import defaultAvatar from "../helpers";
-import styles from "../Phonebook.module.css";
+import { authSelectors, authOperations } from "../../redux/auth";
+import defaultAvatar from "../../units/helpers";
+import styles from "../../theme/Phonebook.module.css";
 
 const UserMenu = ({ avatar, name, onLogout }) => (
   <div className={styles.userMenu}>

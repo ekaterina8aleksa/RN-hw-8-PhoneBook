@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { authOperations } from "../redux/auth";
-import styles from "../Phonebook.module.css";
+import styles from "../theme/Phonebook.module.css";
 import classNames from "classnames";
 
 class LoginPage extends Component {
@@ -20,7 +20,6 @@ class LoginPage extends Component {
     this.props.onLogin(this.state);
 
     this.setState({ email: "", password: "" });
-    console.log("LoginPage Submit");
   };
 
   render() {

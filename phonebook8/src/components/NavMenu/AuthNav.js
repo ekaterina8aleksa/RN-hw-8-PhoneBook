@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from "../Phonebook.module.css";
-import routes from "../routes";
+import styles from "../../theme/Phonebook.module.css";
+import routes from "../../units/routes";
 
 const AuthNav = () => (
   <div>

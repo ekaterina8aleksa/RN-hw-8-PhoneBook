@@ -1,12 +1,12 @@
 import React, { Component, Suspense, lazy } from "react";
 import { Switch } from "react-router-dom";
 import Container from "./common/Container";
-import AppBar from "./components/AppBar";
+import AppBar from "./components/NavMenu/AppBar";
 import { authOperations } from "./redux/auth";
 import { connect } from "react-redux";
-import routes from "./routes";
-import PrivateRoute from "./components/PrivateRoute";
-import PublicRoute from "./components/PublicRoute";
+import routes from "./units/routes";
+import PrivateRoute from "./components/NavMenu/PrivateRoute";
+import PublicRoute from "./components/NavMenu/PublicRoute";
 import Spinner from "./common/Spinner";
 
 const HomePage = lazy(() =>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { authOperations } from "../redux/auth";
-import styles from "../Phonebook.module.css";
+import styles from "../theme/Phonebook.module.css";
 import classNames from "classnames";
 
 class RegisterPage extends Component {
@@ -21,7 +21,6 @@ class RegisterPage extends Component {
     this.props.onRegister(this.state);
 
     this.setState({ name: "", email: "", password: "" });
-    console.log("RegisterPage Submit");
   };
 
   render() {
